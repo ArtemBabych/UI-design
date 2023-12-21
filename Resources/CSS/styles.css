@@ -2,25 +2,106 @@
    Universal Styles
    ============================== */
 
-/* Apply styles to the entire document */
+body {
+   font-size: 20px;
+   background-color: darkgray;
+}
+
+.kalam {
+   font-family: 'Kalam', cursive;
+}
+
+.ptmarker {
+   font-family: 'Permanent Marker', cursive;
+}
 
 /* ==============================
    Header Styles
    ============================== */
-
-/* Styles for the header, including navigation and logo */
+h1 {
+   font-size: 80px;
+   text-transform: uppercase;
+   position: relative;
+   text-align: center;
+   position: block;
+   margin-bottom: 450px;
+   top: 200px;
+}
 
 /* ==============================
    Navigation Styles
    ============================== */
 
-/* Styles for the navigation bar */
+nav {
+   font-size: 25px;
+   display: block;
+   border-top: 2px solid rgb(129 129 129);
+   border-bottom: 2px solid rgb(129 129 129);
+   text-align: center;
+   padding: 5px;
+   margin-bottom: 250px;
+}
+
+nav ul li {
+   display: inline-block;
+   text-align: center;
+}
+
+nav ul li a {
+   display: inline-block;
+   text-decoration: none;
+   color: black;
+   text-align: center;
+   font-family: 'Permanent Marker', cursive;
+   font-size: 25px;
+}
+
+nav ul li+li::before {
+   content: "\2022";
+   margin-right: 10px;
+   display: inline-block;
+   width: 10px;
+   height: 10px;
+
+}
 
 /* ==============================
    Main Content Styles
    ============================== */
 
-/* Styles for main content area, such as articles, sections, etc. */
+main {
+   font-size: 23px;
+   font-family: 'Kalam', cursive;
+   line-height: 25px;
+}
+
+h2 {
+   font-size: 35px;
+  
+}
+
+p {
+   padding: 5px;
+   font-size: 23px;
+   
+}
+
+main section p,
+main section h2,
+main section ul,
+main span {
+   margin: 10px;
+   margin-left: 150px;
+   width: 800px;
+   
+}
+
+
+.bold {
+   font-weight: 700;
+}
+
+
 
 /* ==============================
    Footer Styles
