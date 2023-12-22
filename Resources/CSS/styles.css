@@ -4,7 +4,8 @@
 
 body {
    font-size: 20px;
-   background-color: darkgray;
+   background-color: #bbb;
+   color: #333;
 }
 
 .kalam {
@@ -15,6 +16,22 @@ body {
    font-family: 'Permanent Marker', cursive;
 }
 
+
+.Heebo {
+   font-family: 'Heebo', sans-serif;
+}
+
+.Kalnia {
+   font-family: 'Kalnia', serif;
+}
+
+.lobstertwo {
+   font-family: 'Lobster Two', sans-serif;
+}
+/*
+.inline-block {
+   display: inline-block;
+} */
 /* ==============================
    Header Styles
    ============================== */
@@ -35,8 +52,8 @@ h1 {
 nav {
    font-size: 25px;
    display: block;
-   border-top: 2px solid rgb(129 129 129);
-   border-bottom: 2px solid rgb(129 129 129);
+   border-top: 2px solid #888;
+   border-bottom: 2px solid #888;
    text-align: center;
    padding: 5px;
    margin-bottom: 250px;
@@ -50,7 +67,7 @@ nav ul li {
 nav ul li a {
    display: inline-block;
    text-decoration: none;
-   color: black;
+   color: #333;
    text-align: center;
    font-family: 'Permanent Marker', cursive;
    font-size: 25px;
@@ -62,6 +79,11 @@ nav ul li+li::before {
    display: inline-block;
    width: 10px;
    height: 10px;
+
+}
+
+nav ul li a:hover {
+   color: #eee;
 
 }
 
@@ -80,42 +102,106 @@ h2 {
    margin: 10px;
    margin-left: 150px;
    margin-bottom: 70px;
-  
-}
- 
-h3 {
-   margin-bottom: 67px;
-   font-size: 30px;
+
 }
 
-h4.colorbox {
-   padding: 5px;
-   margin-bottom: 20px;
-   border: 0px solid black;
+h3 {
+   margin-top: 40px;
+   margin-bottom: 50px;
+   font-size: 30px;
+   position: relative;
+   left: 50px;
+   text-align: center;
 }
+
+
+h4.text {
+   margin: 10px;
+   margin-left: 150px;
+   }
+   
+
+h4.colorbox {
+   margin-bottom: 20px;
+   border: 0px solid #888;
+}
+
 p {
    padding: 5px;
    font-size: 23px;
-   
+
 }
 
 main section p,
-main section ul {
+main section li {
    margin: 10px;
    margin-left: 150px;
-   width: 800px;
-   
+   width: 790px;
+
 }
+
 span {
    margin-left: 50px;
 }
 
+figcaption {
+   text-align: center;
+   font-size: 15px;
+   position: relative;
+   left: 88px;
+   margin: 10px;
+   padding-top: 10px;
+   width: 700px;
+}
+
+table,
+tr,
+th,
+td {
+   text-align: center;
+   margin: 0 auto;
+
+   border-collapse: collapse;
+   padding: 10px;
+   color: #333;
+}
+
+table {
+   margin-bottom: 35px;
+}
+
+.margin-bottom {
+   
+   margin-bottom: 50px;
+   width: 300px;
+   margin-left: 150px;
+}
+.margin-bottom h4,
+.margin-bottom ul,
+.margin-bottom li {
+   width: 300px;
+   margin: 0px;
+   padding: 0px;
+   
+}
+.box {
+   width: 300px;
+   height: 200px;
+   padding: 20px;
+   
+   margin: 20px;
+ }
+.border {
+   padding: 20px;
+   border: 1px solid #333;
+}
 .scheme {
    width: 800px;
    text-align: center;
    margin: 0 auto;
-   
+
 }
+
 .scheme p {
    margin: 0 auto;
    width: fit-content;
@@ -125,12 +211,16 @@ span {
    vertical-align: bottom;
    padding-top: 18px;
 }
+
 .colorbox {
    display: block;
    width: 200px;
    height: 100px;
-   border: 1px solid black;
+   border: 1px solid #888;
+   border-radius: 30px;
+   margin-bottom: 3px;
 }
+
 .darkcharcoal {
    background-color: rgb(51, 51, 51);
 }
@@ -138,52 +228,85 @@ span {
 .taupegray {
    background-color: #888888;
 }
+
 .x11 {
    background-color: #bbb;
 }
+
 .brightgray {
    background-color: #eee;
 }
+
 .x11darkgray {
    background-color: #aaa;
 }
+
 .x11gray {
    background-color: #bbb;
 }
+
 .chinesesilver {
    background-color: #ccc;
 }
+
 .gainsboro {
    background-color: #ddd;
 }
+
 .brightgray {
    background-color: #eee;
 }
+
 .blackolive {
    background-color: #3e3e3d;
 }
+
 .sonicsilver {
    background-color: #797978;
 }
+
 .blackolive {
    background-color: #dfdedc;
 }
+
 .blackolive {
    background-color: #c7c6c4;
 }
+
+.specialtext {
+   color: black;
+}
+
 .bold {
    font-weight: 700;
 }
-
-   .column-container {
-     column-count: 2; /* Adjust the number of columns as needed */
-     column-gap: 0px; /* Adjust the gap between columns as needed */
-   }
+.italic {
+   font-style: italic;
+}
+.column-container {
+   column-count: 2;
+   /* Adjust the number of columns as needed */
+   column-gap: 0px;
+   /* Adjust the gap between columns as needed */
+   margin-bottom: 100px;
+}
 
 .column-container-colors {
    column-count: 3;
-   column-gap: 100px;
+   column-gap: 20px;
+   position: relative;
+   left: 80px;
+   display: block;
+
 }
+
+.column-container-text {
+   column-count: 2;
+   column-gap: 0px;
+   position: relative;
+   width: 800px;
+}
+
 /* ==============================
    Footer Styles
    ============================== */
