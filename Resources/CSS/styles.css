@@ -170,6 +170,11 @@ table {
    margin-bottom: 35px;
 }
 
+.div {
+   
+   width: 400px;
+
+}
 .margin-bottom {
    
    margin-bottom: 50px;
@@ -188,7 +193,6 @@ table {
    width: 300px;
    height: 200px;
    padding: 20px;
-   
    margin: 20px;
  }
 .border {
@@ -219,6 +223,11 @@ table {
    border: 1px solid #888;
    border-radius: 30px;
    margin-bottom: 3px;
+}
+p.boxmodel {
+   width: 140px;
+text-align: center;
+margin: 0 auto;
 }
 
 .darkcharcoal {
@@ -306,7 +315,32 @@ table {
    position: relative;
    width: 800px;
 }
+/* The button */
+.button {
+   width: 170px;
+   height: 70px;
+   background-color: #919090;
+   box-shadow: 2px 2px 5px 1px #393939;
+   margin: 0 auto;
+   border-radius: 20px;
+   border: 1px solid #333;
+}
 
+.none {
+   text-decoration: none;
+   color: #333;
+   font-size: 35px;
+   font-weight: 700;
+   letter-spacing: 2px;
+}
+.none:hover {
+   cursor: pointer;
+}
+
+.none:active {
+   box-shadow: none;
+   background-color: #919090;
+}
 /* ==============================
    Footer Styles
    ============================== */
