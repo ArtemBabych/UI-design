@@ -3,6 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google tag (gtag.js) -->
+        <script async
+            src="https://www.googletagmanager.com/gtag/js?id=G-PX022N48H1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PX022N48H1');
+        </script>
+
         <title>UI design</title>
 
         <!-- External Stylesheets -->
@@ -102,7 +113,7 @@
                 <section class="scheme">
                     <h3>Color schemes</h3>
                     <section class="column-container-colors">
-                        <section>
+                        <section class="colorcontainer">
                             <h4 class="colorbox" style="height: 30px;">From dark
                                 to bright gray</h4>
                             <section class="darkcharcoal colorbox specialtext">
@@ -126,7 +137,7 @@
                                 <p>RGB: (238, 238, 238)</p>
                             </section>
                         </section>
-                        <section>
+                        <section class="colorcontainer">
                             <h4 class="colorbox" style="height: 30px;">Thin
                                 gray</h4>
 
@@ -155,7 +166,7 @@
                             </section>
                         </section>
 
-                        <section>
+                        <section class="colorcontainer">
                             <h4 class="colorbox" style="height: 30px;">Gray
                                 Color Scheme</h4>
 
@@ -345,11 +356,9 @@
                         <section class="fontstyles">
                             <h3 class="heading">Font options</h3>
                             <section>
-                                <section>
+                                <section class="table">
                                     <section
-                                        class="specialtext"
-                                        style="        position: relative;
-                                        right: 54px;">
+                                        class="specialtext">
                                         <table class="Heebo">
                                             <thead>
                                                 <tr>
@@ -383,9 +392,7 @@
                                         </table>
                                     </section>
                                     <section
-                                        class="specialtext"
-                                        style="    position: relative;
-                                        left: -15px;">
+                                        class="specialtext">
                                         <table>
                                             <thead class="Kalnia">
                                                 <tr>
@@ -419,9 +426,7 @@
                                         </table>
                                     </section>
                                     <section
-                                        class="specialtext"
-                                        style="    position: relative;
-                                        left: 0px;">
+                                        class="specialtext">
                                         <table class="Lobstertwo">
                                             <thead>
                                                 <tr>
@@ -823,6 +828,9 @@
         </main>
         <footer>
             <p>&copy; 2023 UI design. All rights reserved.</p>
-        </footer>
-    </body>
-</html>
+            <aside class="backbutton">
+                    <a href="https://artembabych.github.io/The-list-of-the-websites/index">Back to the list</a>
+            </aside>
+            </footer>
+        </body>
+    </html>

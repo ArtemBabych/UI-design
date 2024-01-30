@@ -94,13 +94,13 @@ nav ul li a:hover {
 main {
    font-size: 23px;
    font-family: 'Kalam', cursive;
-   line-height: 25px;
+   line-height: 1.2;
 }
 
 h2 {
    font-size: 35px;
    margin: 10px;
-   margin-left: 125px;
+   margin-left: 8%;
    margin-bottom: 70px;
 
 }
@@ -132,13 +132,11 @@ p {
 
 }
 
-main section p,
-main section li {
-   margin: 10px;
-   margin-left: 125px;
+main section p, main section li {
+   margin: 1%;
+   margin-left: 10%;
    margin-right: 0px;
-   width: 790px;
-
+   width: 80%;
 }
 
 span {
@@ -204,11 +202,15 @@ a:hover {
    border: 1px solid #333;
 }
 .scheme {
-   width: 800px;
+   width: 80%;
    text-align: center;
    margin: 0 auto;
    position: relative;
    right: 25px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   flex-wrap: nowrap;
 }
 
 .scheme p {
@@ -223,7 +225,7 @@ a:hover {
 
 .colorbox {
    display: block;
-   width: 200px;
+   width: 80%;
    height: 100px;
    border: 1px solid #888;
    border-radius: 30px;
@@ -303,14 +305,14 @@ margin: 0 auto;
    margin-top: 40px;
    margin-bottom: 50px;
 }
+
 .column-container {
    column-count: 2;
-   /* Adjust the number of columns as needed */
+   
    column-gap: 0px;
-   /* Adjust the gap between columns as needed */
+   
    margin-bottom: 147px;
 }
-
 .column-container-colors {
    column-count: 3;
    column-gap: 20px;
@@ -321,11 +323,14 @@ margin: 0 auto;
 }
 
 .column-container-text {
-   column-count: 2;
    column-gap: 0px;
    position: relative;
-   width: 800px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   justify-items: center;
+   align-items: start;
 }
+
 /* The button */
 .button {
    width: 170px;
@@ -371,6 +376,7 @@ margin: 0 auto;
 #button {
    margin-bottom: 100px;
 }
+
 /* ==============================
    Footer Styles
    ============================== */
@@ -378,20 +384,112 @@ margin: 0 auto;
    footer p {
       width: fit-content;
       text-align: center;
-      margin: 0 auto;
+      margin: 0 0 0 5%;
       font-size: 18px;
-   }
-   footer {
-      background-color: #88888847;
-   }
+  }
+  footer {
+   background-color: #88888847;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
  
-
+   .backbutton {
+      width: 10rem;
+      font-size: 1em;
+      border-radius: 11px;
+      text-align: center;
+      padding: 0.1rem;
+      position: relative;
+      margin-right: 1rem;
+  }
+  
+  .backbutton a {
+   color: #515151;
+   text-decoration: none;
+}
+.backbutton a:hover {
+   color: #515151;
+   text-decoration: underline;
+}
 /* ==============================
    Responsive Design
    ============================== */
 
-/* Media queries and styles for different screen sizes */
-
+@media only screen and (max-width:1700px) {
+   .column-container {
+      column-count: 1;
+   }
+   .scheme {
+      right: 0;
+   }
+   h3 {
+      left: 0;
+   }
+   .column-container-colors {
+      left: 0;
+      width: 80%;
+  }
+  figcaption {
+   left: 0;
+   width: 80%;
+}
+.margin-bottom {
+   margin-left: 0;
+}
+.left50px {
+   left: 0;
+}
+}
+@media only screen and (max-width:1000px) {
+   
+   .scheme  {
+      right: 0;
+   }
+   .column-container-colors {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+   }
+   .colorcontainer {
+      width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4%;
+   }
+   .table {
+      display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    justify-items: start;
+    padding-right: 5%;
+   }
+   .heading {
+      width: 100%;
+   }
+   .column-container-text {
+      position: relative;
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 10%;
+      padding: 5%;
+  }
+}
+@media only screen and (max-width:700px) {
+   .div {
+      width: 100%;
+  }
+   
+}
 /* ==============================
    Custom Components
    ============================== */
